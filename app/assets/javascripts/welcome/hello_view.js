@@ -6,7 +6,7 @@ app.module("welcome", function(mod, app){
       },
       
       next: function () {
-        app.vent.trigger("hello:next");
+        mod.trigger("hello:next");
       },
 
       render: function () {
