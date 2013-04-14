@@ -1,6 +1,6 @@
 app.module("welcome", function(mod, app){
 
-  app.vent.on("hello:next", function () {
+  mod.on("hello:next", function () {
     app.vent.trigger("show:next", mod.mainRegion);
   });
 
